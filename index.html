@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Apolo - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="img/cine apolo.png" alt="Logo Cine Apolo" class="header-logo"> 
+            <h1>Bienvenidos al Cine Apolo</h1>
+        </div>
+        <span class="menu-btn" onclick="abrirMenu()">☰</span>
+    </header>
+    <div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar películas..." oninput="filterMovies()">
+</div>
+
+    
+    <nav id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="cerrarMenu()">&times;</a>
+        <a href="index.html">Cartelera</a>
+        <a href="index.html">Sesiones Hoy</a> 
+        <a href="index.html">Próximamente</a> 
+        <div class="register-btn-container"></div>
+            <a href="registro.html" class="register-btn">Regístrate</a> 
+        </div>
+    </nav>
+
+
+
+    <main>
+        <h2>Películas en Cartelera</h2>
+        <div class="movie-list">
+            
+            <div class="movie">
+                <img src="img/1.jpg" alt="Película 1" 
+                     onclick="selectMovie('CHICO DE ACERO', 'Una emocionante aventura donde los héroes luchan contra fuerzas oscuras.', ['2024-10-01', '2024-10-02'], ['10:00 AM', '12:30 PM', '3:00 PM'])">
+                <h3>CHICO DE ACERO</h3>
+            </div>
+
+          
+            <div class="movie">
+                <img src="img/2.jpg" alt="Película 2" 
+                     onclick="selectMovie('MARTILLITO', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>MARTILLITO</h3>
+            </div>
+            <div class="movie">
+                <img src="img/3.jpg" alt="Película 2" 
+                     onclick="selectMovie('MARTILLITO 2', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>MARTILLITO 2</h3>
+            </div>
+            <div class="movie">
+                <img src="img/4.jpg" alt="Película 2" 
+                     onclick="selectMovie('RESIDENTE', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>RESIDENTE</h3>
+            </div>
+            <div class="movie">
+                <img src="img/5.jpg" alt="Película 2" 
+                     onclick="selectMovie('LA VIEJITA', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>LA VIEJITA</h3>
+            </div>
+            <div class="movie">
+                <img src="img/6.jpg" alt="Película 2" 
+                     onclick="selectMovie('SPRECTRAL', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>SPRECTRAL</h3>
+            </div>
+            <div class="movie">
+                <img src="img/7.jpg" alt="Película 2" 
+                     onclick="selectMovie('LA GLORIA', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>LA GLORIA</h3>
+            </div>
+            <div class="movie">
+                <img src="img/8.jpg" alt="Película 2" 
+                     onclick="selectMovie('PROJECTOO', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>PROJECTOO</h3>
+            </div>
+            <div class="movie">
+                <img src="img/9.jpg" alt="Película 2" 
+                     onclick="selectMovie('VENONL', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>VENONL</h3>
+            </div>
+            <div class="movie">
+                <img src="img/10.jpg" alt="Película 2" 
+                     onclick="selectMovie('VENONSOTE', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>VENONSOTE</h3>
+            </div>
+            <div class="movie">
+                <img src="img/11.jpg" alt="Película 2" 
+                     onclick="selectMovie('ARAÑITA', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>ARAÑITA</h3>
+            </div>
+            <div class="movie">
+                <img src="img/12.jpg" alt="Película 2" 
+                     onclick="selectMovie('LOS AVENGER', 'Un viaje lleno de acción, misterio y ciencia ficción.', ['2024-10-02', '2024-10-03'], ['11:00 AM', '2:00 PM', '5:00 PM'])">
+                <h3>LOS AVENGER</h3>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cine Apolo. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p><a href="#">la mejor pagina del mundo </a> | <a href="#"> sin privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="asientos.js"></script>
+    <script src="registro.html"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Apolo - Selección de Asientos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selecciona tu Asiento</h1>
+        <span class="menu-btn" onclick="abrirMenu()">☰</span>
+    </header>
+
+    
+    <nav id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="cerrarMenu()">&times;</a>
+        <a href="index.html">Cartelera</a>
+        <a href="index.html">Sesiones Hoy</a>
+        <a href="registro.html">Próximamente</a>
+        <div class="register-btn-container"></div>
+        <a href="registro.html" class="register-btn">Regístrate</a> 
+    </div>
+    </nav>
+    <main>
+        <div class="movie-info">
+            <img id="movie-poster" src="" alt="Carátula de la película" class="movie-poster">
+            <div>
+                <h2 id="movie-title"></h2>
+                <p id="movie-description"></p>
+            </div>
+        </div>
+     
+        <label for="date-selector">Fecha:</label>
+        <select id="date-selector"></select>
+
+        <label for="time-selector">Horario:</label>
+        <select id="time-selector"></select>
+
+        <h3>Selecciona tu asiento:</h3>
+        <div class="seating-chart">
+           
+        </div>
+        <div id="ticket" class="ticket" style="display: none;"></div>
+            <h2>Boleto de Cine</h2>
+            <p><strong>Película:</strong> <span id="ticket-movie"></span></p>
+            <p><strong>Fecha:</strong> <span id="ticket-date"></span></p>
+            <p><strong>Hora:</strong> <span id="ticket-time"></span></p>
+            <p><strong>Asiento:</strong> <span id="ticket-seat"></span></p>
+        </div>
+
+        <button id="reserve-seat-btn">Reservar Asiento</button>
+
+        
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="asientos.js"></script>
+    <script src="main.js"></script>
+    <script src="registro.html"></script>
+</body>
+</html>

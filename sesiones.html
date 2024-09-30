@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Apolo - Selección de Sesiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selecciona la sesión</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Películas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="movie-title">Película seleccionada</h2>
+
+        <label for="date-selector">Selecciona una fecha:</label>
+        <select id="date-selector">
+            <option value="2024-10-01">1 de Octubre 2024</option>
+            <option value="2024-10-02">2 de Octubre 2024</option>
+            <option value="2024-10-03">3 de Octubre 2024</option>
+        </select>
+
+        <h3>Sesiones disponibles</h3>
+        <div id="sessions-list">
+            <!-- Aquí se mostrarán las sesiones dinámicamente -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cine Apolo</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
